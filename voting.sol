@@ -17,7 +17,7 @@ contract Voting {
 
     mapping (address => bool) votingResults; 
 
-    constructor() internal {
+    constructor() public {
         _owner = msg.sender;
         emit contractDeploy(_owner);     
     }
